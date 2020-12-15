@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li ><img src="logo.jpg" height="50px" width="100px"></li>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <li class="search-icon">
+                <input type="search" placeholder="Location">
+                <label class="icon">
+                    <i class="fas fa-chevron-down"></i>
+                </label>
+                </li>
+            &nbsp;
+            <li>
+            <input type='text' placeholder='Search...' id='search-text-input'>
+            <div id='button-holder'>
+                <img src="search.png" >
+             </label> 
+            </div>
+            </li>
+            &nbsp;&nbsp;&nbsp; 
+           <div class="items">
+               <li><a href="#">ENGLISH &nbsp;&nbsp;<i class="fas fa-chevron-down"></i></a></li>
+              <li><a href="#"> <i class="far fa-comment"></i></a></li>
+              <li><a href="#"> <i class="far fa-bell"></i></a></li>
+              <li><a href="#"><img src="profile.png" height="40px" width="40px"></a></li>
+              <li><button>+ POST</button></li>
+              
+             </div>
+                </ul>
+        </nav>
+        <script>
+            $('nav ul li.btn span').click(function(){
+            $('nav ul div.items').toggleClass("show");
+            $('nav ul li.btn span').toggleClass("show");
+            });
+        </script>
+</body>
+</html>
